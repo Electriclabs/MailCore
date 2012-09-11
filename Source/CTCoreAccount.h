@@ -44,7 +44,7 @@
     struct mailstorage *myStorage;
     BOOL connected;
     NSError *lastError;
-    NSString *pathDelimiter;
+    //NSString *pathDelimiter;
 }
 /**
  If an error occurred (nil or return of NO) call this method to get the error
