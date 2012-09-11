@@ -164,7 +164,7 @@ static void download_progress_callback(size_t current, size_t maximum, void * co
             mailimap_set_progress_callback(get_imap_session(mMessage), NULL, NULL, NULL); 
         }
         if (r != MAIL_NO_ERROR) {
-            mailmessage_fetch_result_free(mMessage, fetchedData);
+            //mailmessage_fetch_result_free(mMessage, fetchedData);
             self.lastError = MailCoreCreateErrorFromIMAPCode(r);
             return NO;
         }
